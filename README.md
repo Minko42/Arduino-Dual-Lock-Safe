@@ -41,7 +41,7 @@
 
 **Component Selection (部品選定の根拠):**
 * **LED電流制限抵抗:**
-  LEDの順電圧 $V_f = 2.0V$(赤色)、$3.6V$(緑色)、目標電流 $I_f = 20mA$ と仮定( [LED_datasheet(PDF)](docs/LED_datasheet.pdf) より)。Arduinoの出力は$5V$なので、オームの法則より
+  LEDの順電圧 $V_f = 2.0V$(赤色)、$3.6V$(緑色)、目標電流 $I_f = 20mA$ と仮定( [LED_datasheet(PDF)](docs/LED_datasheet.pdf) より)。Arduinoの出力は $5V$ なので、オームの法則より
   $$R = \frac{5.0 - V_f}{I_f} $$
   したがって、赤色では $R = 150[\Omega]$ 、緑色では $R = 70[\Omega]$ となり、赤色LEDでは**220Ω**、緑色LEDでは**100Ω**の抵抗を選定した。(後に緑色LEDの抵抗を**220Ω**に変更)
 
