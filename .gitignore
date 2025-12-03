@@ -1,0 +1,38 @@
+# --- Arduino IDE & Compilation ---
+# コンパイル時に生成される一時フォルダやファイル
+build/
+output/
+*.hex
+*.elf
+*.bin
+*.map
+*.lock
+
+# --- KiCad (Electronic Design Automation) ---
+# バックアップファイル
+*-bak
+*.kicad_pcb-bak
+*.sch-bak
+_autosave-*
+
+# ローカル設定ファイル (プロジェクト設定のうち、個人の環境に依存するもの)
+*.kicad_prl
+
+# フットプリントライブラリのキャッシュ (環境ごとに再生成されるため不要)
+fp-info-cache
+
+# ネットリストやXMLエクスポート (回路図から生成されるため必須ではない)
+*.net
+*.xml
+
+# --- VS Code (もしエディタとして使う場合) ---
+.vscode/
+
+# --- Operating System Files (Mac/Windows) ---
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# --- Optional: Datasheets ---
+# データシート(PDF)をGit管理に含めたくない場合はコメントアウトを外してください
+# *.pdf
