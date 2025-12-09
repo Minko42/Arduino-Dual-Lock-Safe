@@ -93,7 +93,7 @@ long InputDigitalcode() {
 }
 
 //アナログパスコードを入力する関数.
-int analogpass(){
+int InputAnalogcode(){
   int pass = 0;
   lcd.setCursor(passlen + 1, 1);
   while(true){
@@ -157,11 +157,11 @@ void correctpass(){
 }
 
 //シリアルモニタに入力された値を表示する関数.
-void printvalue(long *digitalcode, int *analogcode){
+void printvalue(long digitalcode, int analogcode){
   Serial.print("The input value is ");
-  Serial.print(*digitalcode);
+  Serial.print(digitalcode);
   Serial.print(" & ");
-  Serial.print(*analogcode);
+  Serial.print(analogcode);
   Serial.println("");
 }
 
@@ -194,7 +194,7 @@ void loop() {
   }
 
   while(!potenlock){
-    acode = analogpass(); 
+    acode = InputAnalogcode(); 
   }
 
   //エンターキーが押された時の処理.
