@@ -30,9 +30,7 @@ const long digitalcode = 1111; //デジタルパスコード.
 const int analogcode = 50; //アナログパスコード（０～１００まで）.
 
 long dcode = 0;
-long *dp = &dcode;
 int acode = 0;
-int *ap = &acode;
 
 bool reset = true;
 bool potenlock = true;
@@ -206,7 +204,7 @@ void loop() {
     else{
       wrongpass();
     }
-    printvalue(dp,ap);
+    printvalue(dcode,acode);
     delay(waittime);
   }
 
