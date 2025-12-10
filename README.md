@@ -149,5 +149,3 @@
 * 【Arduino入門編⑰】LCDディスプレイに文字を表示させてみる！［前編］[1602 LCDモジュール] (https://burariweb.info/electronic-work/arduino-learning/arduino-lcd-module-display.html)
 
 * kicadの使い方（回路図編）(https://www.kicad.xyz/circuit/)
-
-[def]: images/picture1.jpg.jpg
